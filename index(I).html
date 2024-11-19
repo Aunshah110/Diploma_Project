@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+
+    #net{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    font-size: 40px;
+    text-indent: 5px;
+    line-height: 3px;}
+
+    .pp{font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 22px;}
+        
+        
+    #lmov{font-family: 'Times New Roman', Times, serif;
+          color: white;
+          font-size: 22px;}    
+
+
+   .series1{border: solid;
+    border-width: 5px;
+   border-color: red; 
+   text-indent: 10px; 
+   width: 190px; height: 140px; 
+   transition: transform 1s;
+    margin: 0 auto;}
+
+    .series1:hover{width :205px;height:155px}
+
+    .series2{border: solid;
+      border-width: 5px;
+   border-color: red;  
+   width: 290px; height: 250px; 
+   transition: transform 1s;
+    margin: 0 auto;}
+
+    .series2:hover{width: 305px; height: 275px;}
+
+.mySlides{width: 1100px;  height: 400px;
+ border: solid;
+ image-resolution: 3000px ;
+ align-items: left;
+ line-break: normal;
+}
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-indent: 70px;
+} 
+
+
+#dropa{
+  color: whitesmoke;
+  background-color: #191919;
+  border: none;
+  font-size: 18px;
+}
+#dropa:hover {
+  color: red;
+  font-size: 20px;
+}
+
+#dropb{
+ background-color: #191919;
+  color: whitesmoke;
+  border: none;
+  font-size: 18px;
+  text-indent: 30px;
+}
+#dropb:hover {
+  color: red;
+  font-size: 20px;
+}
+
+#dropc{
+ background-color: #191919;
+  color: whitesmoke;
+  border: none;
+  font-size: 18px;
+  text-indent: 30px;
+}
+#dropc:hover {
+  color: red;
+  font-size: 20px;
+}
+ 
+#dropd{
+ background-color: #191919;
+  color: whitesmoke;
+  border: none;
+  font-size: 18px;
+  text-indent: 30px;
+}
+#dropd:hover {
+  color: red;
+  font-size: 20px;
+}
+
+#drope{
+ background-color: #191919;
+  color: whitesmoke;
+  border: none;
+  font-size: 18px;
+  text-indent: 30px;
+}
+#drope:hover {
+  color: red;
+  font-size: 20px;
+}
+
+ 
+ </style>   
+<title>Netflix</title>
+
+
+</head>
+<body style="background-color: #191919;"> 
+  <table>     
+
+  <tr>
+    <td><h1 id="net">NETFLIX</h1></td>
+      <td><div class="dropdown">
+      <a href="#lmovs"><button id="dropa">MOVIES</button></a>
+      <a href="#wat"><button id="dropb">TV PROGRAM</button></a>
+      <a href="#mylist"><button id="dropc">MY LIST</button></a>
+      <a href="https://www.netflix.com/signup"><button id="dropd">SUBSCRIPTION</button></a>
+      </div></td>
+  </tr>
+
+</table>
+
+<table>
+<tr>
+<br><div align="center">
+  <img class="mySlides" src="images\ffff.jpg"width:100%">
+  <img class="mySlides" src="images\rrr.jpg"width:100%">
+  <img class="mySlides" src="images\yyy.jpg"width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</tr>
+
+
+
+    
+    <tr>
+      <h1 class="pp">Popular on Netflix</h1></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ"><img class="series1"    src="images\abc.jpg"></a></td> 
+       <td><a href="https://www.youtube.com/watch?v=_InqQJRqGW4"><img class="series1"   src="images/bbb.jpg"></a></td>
+       <td><a href="https://www.youtube.com/watch?v=y3VzeVtMZyE&vl=en"><img class="series1"   src="images/bcc.jpg"></a></td>
+       <td><a href="https://www.youtube.com/watch?v=oqxAJKy0ii4"><img class="series1"   src="images/aaa.jpg"></a></td>
+       <td><a href="https://www.youtube.com/watch?v=b9EkMc79ZSU"><img class="series1"   src="images/aab.jpg"></a></td>
+       <td><a href="https://www.youtube.com/watch?v=hm45yGSwArY"><img class="series1"   src="images/fss.jpg"></a></td>
+       <td><a href="https://www.youtube.com/watch?v=Di310WS8zLk"><img class="series1"   src="images/faa.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=oVzVdvGIC7U"><img class="series1"   src="F:Live project\images\bba.jpg"></a></td>
+    </tr>
+    
+    <tr>
+      <td><h1 class="pp">Trending Now</h1></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=YDbnY9Obsfs"><img class="series1"    src="images/pppp.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=srx7fSBwvF4"><img class="series1"    src="images/aaaa.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=fzmM0AB60QQ"><img class="series1"    src="images/ppppp.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=9GgxinPwAGc"><img class="series1"    src="images/yyy.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=zhmIVF2dTbI"><img class="series1"    src="images/qqq.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=HhesaQXLuRY"><img class="series1"    src="images/iii.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=xl8zdCY-abw"><img class="series1"    src="images/ggg.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=XatRGut65VI"><img class="series1"    src="images/pop.jpg"></a></td>
+    </tr>  
+    <tr>
+      <td><h1 class="pp"><a id="wat">Watch it Agains</a></h1></td>
+      </tr>
+      <tr>
+      <td><a href="https://www.youtube.com/watch?v=dKrVegVI0Us"></a><img class="series1"    src="images/you.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=jrLhP5sK2wI"></a><img class="series1"    src="images/oio.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=6EZCBSsBxko"></a><img class="series1"    src="images/eee.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=ZLW2jkd6E7g"></a><img class="series1"    src="images/www.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=QNwhAdrdwp0"><img class="series1"    src="images/opoo.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=Z_f7cqmmSQA"></a><img class="series1"    src="images/xxco.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=nWHUjuJ8zxE"></a><img class="series1"    src="images/tyt.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=83ClbRPRDXU"></a><img class="series1"    src="images/snna.jpg"></a></td>
+    </tr>
+    <tr>
+      <td><h1 class="pp"><a id="mylist">My List</a></h1></td>
+    </tr> 
+
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=5SKP1_F7ReE"></a><img class="series1"    src="images/rrr.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=nW948Va-l10"></a><img class="series1"    src="images/zzx.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=o2AsIXSh2xo"></a><img class="series1"    src="images/zxc.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=bdpYpulGCKc"></a><img class="series1"    src="images/apsp.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=k7uFcpF0pXk"></a><img class="series1"    src="images/baaa.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=eOrNdBpGMv8"></a><img class="series1"    src="images/pll.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=11ZozKfRqvA"></a><img class="series1"    src="images/dff.jpg"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=ia1Fbg96vL0"></a><img class="series1"    src="images/kkk.jpg"></a></td>
+    </tr>
+
+    
+</table>
+
+<table>
+  <tr>
+    <td><h1 id="lmov"><a id="lmovs">Lastest Movies</a></h1></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=XokbU3onqeo"><img class="series2"    src="movies pics\yup.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=eHp3MbsCbMg"><img class="series2"    src="movies pics\poi.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=QPistcpGB8o"><img class="series2"    src="movies pics\nope.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=ulPHag30btQ"><img class="series2"    src="movies pics\carter.jpg"></a></td>  
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=BmllggGO4pM"><img class="series2"    src="movies pics\man.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=X0tOpBuYasI"><img class="series2"    src="movies pics\black.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=Y-ufZuqTd5c"><img class="series2"    src="movies pics\silence.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=WLBn_2SmTWU"><img class="series2"    src="movies pics\privilaf.jpg"></a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=eoOaKN4qCKw"><img class="series2"    src="movies pics\fast x.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=JfVOs4VSpmA"><img class="series2"    src="movies pics\spider man.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=UrN4oyanERU"><img class="series2"    src="movies pics\download.jpg"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=AntcyqJ6brc"><img class="series2"    src="movies pics\trans.jpg"></a></td>
+  </tr>
+
+</table>
+</div>
+
+</body>
+</html>
+
+
+
+
